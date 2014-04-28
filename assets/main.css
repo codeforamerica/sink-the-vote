@@ -1,3 +1,6 @@
+body{
+	background-image:url("flags_bg.png");
+}
 h1{
 	background-color:#fff;
 	padding:0.2em 1em;
@@ -10,9 +13,12 @@ h1 span{
 	display:block;
 	float:right;
 	padding-top:0.5em;
+	padding-right:1em;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+.global-foot .layout-tight{
+	padding:0.5em 1em;
+}
 .options{
 	background-color:#fff;
 	margin:2em 4em;
@@ -21,11 +27,16 @@ h1 span{
 	-moz-border-radius: 4px;
 	border-radius: 4px;
 	overflow:hidden;
+	border:3px solid #333;
 }
 
 #suppression-group label{
 	display:inline-block;
 	font-size: 2em;
+	color:#000;
+}
+li label{
+	font-size:1em;
 	color:#000;
 }
 body {
@@ -45,5 +56,5 @@ legend{
 }
 
 .teaser-footer img{
-	height: 90px;
+	max-height: 90px;
 }
