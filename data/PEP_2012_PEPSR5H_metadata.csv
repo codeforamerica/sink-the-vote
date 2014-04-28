@@ -1,0 +1,14 @@
+Hisp.id,Id
+Hisp.display-label,Hispanic Origin
+Sex.id,Id
+Sex.display-label,Sex
+Year.id,Id
+Year.display-label,Year
+GEO.id,Id
+GEO.id2,Id2
+GEO.display-label,Geography
+wac,Race Alone or in Combination [1] - White
+bac,Race Alone or in Combination [1] - Black or African American
+iac,Race Alone or in Combination [1] - American Indian and Alaska Native
+aac,Race Alone or in Combination [1] - Asian
+nac,Race Alone or in Combination [1] - Native Hawaiian and Other Pacific Islander
