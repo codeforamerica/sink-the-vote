@@ -15,7 +15,9 @@ h1 span{
 	padding-top:0.5em;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
-
+.global-foot .layout-tight{
+	padding:0.5em 1em;
+}
 .options{
 	background-color:#fff;
 	margin:2em 4em;
@@ -30,6 +32,10 @@ h1 span{
 #suppression-group label{
 	display:inline-block;
 	font-size: 2em;
+	color:#000;
+}
+li label{
+	font-size:1em;
 	color:#000;
 }
 body {
