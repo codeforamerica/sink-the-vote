@@ -55,8 +55,12 @@ body {
 legend{
 	font-size:2.5em;
 	padding-right:5em;
+	margin:1em 0 1.5em 0;
 }
 
 .teaser-footer img{
 	max-height: 90px;
+}
+em{
+	color:#AD0E1D;
 }
