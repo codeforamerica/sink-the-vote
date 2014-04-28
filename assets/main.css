@@ -1,3 +1,10 @@
 h1{
 	background-color:#fff;
+	padding:0.2em 1em;
+}
+
+.options{
+	background-color:#fff;
+	margin:1em;
+	padding:1em;
 }
