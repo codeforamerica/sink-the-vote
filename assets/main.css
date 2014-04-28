@@ -43,3 +43,7 @@ legend{
 	font-size:2.5em;
 	padding-right:2em;
 }
+
+.teaser-footer img{
+	height: 90px;
+}
