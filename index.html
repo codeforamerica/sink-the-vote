@@ -18,12 +18,12 @@
   <h1><img src="assets/logo.png" alt="Sink the Vote"> <span>Voting is only <em>technically</em> a right</span></h1>
 
 
-    <form class="options" action="map.html" method="GET">
+    <form class="options" action="template.html" method="GET">
     <fieldset>
-    	<legend>Not getting the outcome you want in your election?</legend>
+    	<legend>Got too many people voting in your area? Why not change the voting rules!</legend>
       <p id="suppression-group">
       <label for="select">Make it harder for </label>
-      <select name="suppress">
+      <select>
           <option value="everyone">Everyone!</option>
           <option value="elderly">The elderly and disabled</option>
           <option value="minorities">Ethnic minorities (traditionally oppressed)</option>
@@ -46,10 +46,6 @@
     			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox" value="2"/>Use remote locations for polling location far from public transit</label>
     			<small class="note">Only those who drive get to vote.</small>
     		</li>
-        <li>
-          <label for="checkbox5" class="check"><input id="checkbox5" name="checkbox" type="checkbox" value="5"/>Prevent access to bathroom facilities</label>
-          <small class="note">You should have gone before you left home.</small>
-        </li>
         <li>
           <label for="checkbox6" class="check"><input id="checkbox6" name="checkbox" type="checkbox" value="6"/>Spread misinformation about poll locations and times</label>
           <small class="note">Participating in democracy is like participating in a scavenger hunt.</small>
@@ -79,26 +75,26 @@
       <ul class="list-form" id="elderly">
         <li>
           <label for="checkbox12" class="check"><input id="checkbox12" name="checkbox" type="checkbox" value="12"/>Cause long wait times, preferably outdoors in inclement weather</label>
-          <small class="note">Note about these option</small>
+          <small class="note">You'd wait in line for brunch.</small>
         </li>
         <li>
           <label for="checkbox13" class="check"><input id="checkbox13" name="checkbox" type="checkbox" value="5"/>Prevent access to bathroom facilities</label>
-          <small class="note">Note about these option</small>
+          <small class="note">You should have gone before you left home.</small>
         </li>
         <li>
           <label for="checkbox14" class="check"><input id="checkbox14" name="checkbox" type="checkbox" value="3"/>Provide a physically inaccessible or hard-to-navigate space (especially for wheelchair users and the blind)</label>
-          <small class="note">Note about these option</small>
+          <small class="note"></small>
         </li>
         <li>
           <label for="checkbox4" class="check"><input id="checkbox4" name="checkbox" type="checkbox" value="4"/>Provide only small-print voting materials</label>
-          <small class="note">Note about these option</small>
+          <small class="note"></small>
         </li>
       </ul>
 
       <ul class="list-form" id="minorities">
         <li>
           <label for="checkbox15" class="check"><input id="checkbox15" name="checkbox" type="checkbox" value="13" />Require specific forms of ID</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">Just another hoop.</small>
         </li>
         <li>
           <label for="checkbox16" class=><input id="checkbox16" name="checkbox" type="checkbox" value="14" />Spread misinformation</label>
@@ -106,74 +102,74 @@
         </li>
         <li>
           <label for="checkbox17" class="check"><input id="checkbox17" name="checkbox" type="checkbox" value="15" />Have a threatening poll location</label>
-          <small class="note">Note about these option</small>
+          <small class="note">If you are easily intimidated, don't vote.</small>
         </li>
         <li>
           <label for="checkbox18" class="check"><input id="checkbox18" name="checkbox" type="checkbox" value="16" />Charge a poll tax</label>
-          <small class="note">Note about these option</small>
+          <small class="note">Like freedom, voting isn't free.</small>
         </li>
         <li>
           <label for="checkbox19" class="check"><input id="checkbox19" name="checkbox" type="checkbox" value="17" />Force voters to take literacy tests</label>
-          <small class="note">Note about these option</small>
+          <small class="note">Have you read "Of Mice and Men"? It's required.</small>
         </li>
         <li>
-          <label for="checkbox20" class="check"><input id="checkbox20" name="checkbox" type="checkbox" value="18" />Prohibit convicts from voting</label>
-          <small class="note">Note about these option</small>
+          <label for="checkbox20" class="check"><input id="checkbox20" name="checkbox" type="checkbox" value="18" />Prohibit ex-convicts from voting</label>
+          <small class="note">What do you mean you served your time?</small>
         </li>
       </ul>
 
       <ul class="list-form" id="women">
         <li>
           <label for="checkbox21" class="check"><input id="checkbox21" name="checkbox" type="checkbox" value="19" />Use polling times that are especially inconvenient for parents</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">You would need shoes to leave the house anyway.</small>
         </li>
       </ul>
 
       <ul class="list-form" id="young">
         <li>
           <label for="checkbox22" class="check"><input id="checkbox22" name="checkbox" type="checkbox" value="20" />Do not communicate about when and where voting happens</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">FOMO.</small>
         </li>
         <li>
           <label for="checkbox23" class=><input id="checkbox23" name="checkbox" type="checkbox" value="21" />Enforce a minimum residency requirement/duration of voter registration</label>
-          <small class="note">Note about these option</small>
+          <small class="note">This is what you get for going to college.</small>
         </li>
       </ul>
 
       <ul class="list-form" id="religious">
         <li>
           <label for="checkbox24" class="check"><input id="checkbox24" name="checkbox" type="checkbox" value="21" />Open polls only on Fridays, Saturdays, Sundays or religious holidays</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">It's voting time, not prayer time.</small>
         </li>
         <li>
           <label for="checkbox25" class="check"><input id="checkbox25" name="checkbox" type="checkbox" value="22" />Restrict what can be worn at polling places</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">No turbans, yarmulkes, beards, or crucifixes please.</small>
         </li>
       </ul>
 
       <ul class="list-form" id="atheists">
         <li>
           <label for="checkbox26" class="check"><input id="checkbox26" name="checkbox" type="checkbox" value="23" />Locate polls in places of worship</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">Does our Lord and Savior make you uncomfortable?</small>
         </li>
         <li>
           <label for="checkbox27" class="check"><input id="checkbox27" name="checkbox" type="checkbox" value="24" />Hold pre-voting prayer</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">Our nation is, after all, under God.</small>
         </li>
       </ul>
 
       <ul class="list-form" id="lgbtq">
         <li>
           <label for="checkbox28" class="check"><input id="checkbox28" name="checkbox" type="checkbox" value="25" />Require photo ID</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">Please also fit into a gender role.</small>
         </li>
         <li>
           <label for="checkbox29" class="check"><input id="checkbox29" name="checkbox" type="checkbox" value="26" />Have gender-specific polls</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+          <small class="note">We will make sure you're in the right line.</small>
         </li>
         <li>
           <label for="checkbox30" class="check"><input id="checkbox30" name="checkbox" type="checkbox" value="27" />Ask intrusive questions</label>
-          <small class="note">Ask intrusive questions</small>
+          <small class="note">It's our business if you want to vote.</small>
         </li>
       </ul>
 
@@ -222,16 +218,8 @@
         </li>
       </ul>
 
-      <button class="button-prominent" type="submit">Suppress!</button>
+      <button class="button-prominent">Submit (make this witty)</button>
     </fieldset>
 </form>
-  <div class="global-foot" role="contentinfo">
-    <div class="layout-tight layout-breve">
-      <div class="global-foot-content">
-        <img class="global-foot-logo" src="http://codeforamerica.org/assets/logo-inversed.png">
-        <small>&copy2014 Code for America. Code for America is a non-partisan, non-political 501(c)(3) organization. Content is licensed through Creative Commons.</small>
-      </div>
-    </div>
-  </div>
   </body>
 </html>
