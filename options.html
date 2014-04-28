@@ -7,6 +7,8 @@
    	<link rel="stylesheet" href="http://style.codeforamerica.org/0/style/css/layout.css" media="all and (min-width: 40em)">
     <link href="http://style.codeforamerica.org/0/style/css/prism.css" rel="stylesheet" />
     <link href="assets/main.css" rel="stylesheet" />
+    <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+    <script src='assets/options.js'></script>
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Sink the Vote</title>
@@ -21,9 +23,9 @@
       <p id="suppression-group">
       <label for="select">I'd like to suppress </label>
       <select>
-          <option>Everyone</option>
-          <option>The elderly and disabled</option>
-          <option>Women</option>
+          <option value="everyone">Everyone</option>
+          <option value="elderly">The elderly and disabled</option>
+          <option value="women" selected>Women</option>
           <option>Ethinic minorities</option>
           <option>LGBT constituents</option>
       </select>
