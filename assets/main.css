@@ -13,6 +13,7 @@ h1 span{
 	display:block;
 	float:right;
 	padding-top:0.5em;
+	padding-right:1em;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .global-foot .layout-tight{
