@@ -21,57 +21,124 @@
     <fieldset>
     	<legend>Got too many people voting in your area? Why not change the voting rules!</legend>
       <p id="suppression-group">
-      <label for="select">I'd like to suppress </label>
+      <label for="select">Make it harder for </label>
       <select>
-          <option value="everyone">Everyone</option>
+          <option value="everyone">Everyone!</option>
           <option value="elderly">The elderly and disabled</option>
-          <option value="women" selected>Women</option>
-          <option>Ethinic minorities</option>
-          <option>LGBT constituents</option>
+          <option value="minorities">Ethnic minorities (traditionally oppressed)</option>
+          <option value="women">Women</option>
+          <option value="young">Young people</option>
       </select>
     </p>
     	<ul class="list-form" id="everyone">
     		<li>
-    			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" />Reduce voting hours</label>
+    			<label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" value="1" />Prohibit early or mail-in voting</label>
     			<small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
     		</li>
     		<li>
-    			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+    			<label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox" value="2"/>Use remote locations for polling location far from public transit</label>
     			<small class="note">Note about these option</small>
     		</li>
     		<li>
-    			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+    			<label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="3"/>Use physically inaccessible space</label>
     			<small class="note">Note about these option</small>
     		</li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="4"/>Provide only small-print voting materials</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="5"/>Prevent access to bathroom facilities</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="6"/>Spread misinformation about poll locations and times</label>
+          <small class="note">Spread misinformation about poll locations and times</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="7"/>Drop people from the voter rolls</label>
+          <small class="note">Drop people from the voter rolls</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="8"/>Design voting mechanisms to be hard to use</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="9"/>Make people think their votes won’t be counted</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="10"/>Protect polls from “fraud”</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="11"/>Prohibit accompaniment to the polls</label>
+          <small class="note">Note about these option</small>
+        </li>
     	</ul>
+
       <ul class="list-form" id="elderly">
         <li>
-          <label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" />Reduce voting hours</label>
-          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
-        </li>
-        <li>
-          <label for="checkbox2" class=><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="12"/>Cause long wait times, preferably outdoors in inclement weather</label>
           <small class="note">Note about these option</small>
         </li>
         <li>
-          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="5"/>Prevent access to bathroom facilities</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="3"/>Provide a physically inaccessible or hard-to-navigate space (especially for wheelchair users and the blind)</label>
           <small class="note">Note about these option</small>
         </li>
       </ul>
+
+      <ul class="list-form" id="minorities">
+        <li>
+          <label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" value="13" />Require specific forms of ID</label>
+          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+        </li>
+        <li>
+          <label for="checkbox2" class=><input id="checkbox2" name="checkbox" type="checkbox" value="14" />Spread misinformation</label>
+          <small class="note">Do you have some outstanding parking tickets you should be worried about?</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="15" />Have a threatening poll location</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="16" />Charge a poll tax</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="17" />Force voters to take literacy tests</label>
+          <small class="note">Note about these option</small>
+        </li>
+        <li>
+          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox" value="18" />Prohibit convicts from voting</label>
+          <small class="note">Note about these option</small>
+        </li>
+      </ul>
+
       <ul class="list-form" id="women">
         <li>
-          <label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" />Reduce voting hours</label>
+          <label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" value="19" />Use polling times that are especially inconvenient for parents</label>
+          <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
+        </li>
+        
+      </ul>
+
+      <ul class="list-form" id="young">
+        <li>
+          <label for="checkbox1" class="check"><input id="checkbox1" name="checkbox" type="checkbox" value="20" />Do not communicate about when and where voting happens</label>
           <small class="note">If you can't make it between 9am and 5pm, well... you're just not committed.</small>
         </li>
         <li>
-          <label for="checkbox2" class="check"><input id="checkbox2" name="checkbox" type="checkbox"/>Choice B</label>
-          <small class="note">Note about these option</small>
-        </li>
-        <li>
-          <label for="checkbox3" class="check"><input id="checkbox3" name="checkbox" type="checkbox"/>Choice C</label>
+          <label for="checkbox2" class=><input id="checkbox2" name="checkbox" type="checkbox" value="21" />Enforce a minimum residency requirement/duration of voter registration</label>
           <small class="note">Note about these option</small>
         </li>
       </ul>
+
+
       <button class="button-prominent">Submit (make this witty)</button>
     </fieldset>
 </form>
