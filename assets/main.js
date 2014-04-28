@@ -1,22 +1,20 @@
 $(function() {
-  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-nNggJoxm1WpJkbJEzYXNRhEzk7XBx7bw5aaX0aFpes/pubhtml';
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ggb9SdKIIEsxzQUfu1k0GxTi42OJ-YSuMUk9CMF7Y0g/pubhtml';
   var stateDemos = {};
 
-  function init() {
+  function getDemographics() {
     Tabletop.init( { key: public_spreadsheet_url,
                      callback: showInfo,
                      simpleSheet: true } )
   }
 
   function showInfo(data, tabletop) {
-    // alert("Successfully processed!")
     data.forEach(function(state) {
-      stateDemos[state['state']] = state;
+      stateDemos[state['location']] = state;
     });
-    // console.log(stateDemos);
   }
 
-  init();
+  getDemographics();
 
   // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
   var map = L.mapbox.map('map', 'examples.map-vyofok3q').setView([37.8, -96], 4);
@@ -71,7 +69,7 @@ $(function() {
       console.log(stateDemos[layer.feature.properties.name]);
 
       popup.setContent('<h2>' + layer.feature.properties.name + '</h2>' +
-          stateDemos[layer.feature.properties.name]['caucasion'] + ' caucasions');
+          stateDemos[layer.feature.properties.name]['disabled'] + ' disabled people');
 
       if (!popup._map) popup.openOn(map);
       window.clearTimeout(closeTooltip);
