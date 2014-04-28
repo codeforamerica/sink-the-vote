@@ -4,14 +4,28 @@ $(function() {
 
   function getDemographics() {
     Tabletop.init( { key: public_spreadsheet_url,
-                     callback: showInfo,
+                     callback: setDemographics,
                      simpleSheet: true } )
   }
 
-  function showInfo(data, tabletop) {
+  function setDemographics(data, tabletop) {
     data.forEach(function(state) {
       stateDemos[state['location']] = state;
     });
+    suppress('elderly');
+  }
+
+  var keyToDemos = {
+    'elderly': ['disabled', 'elderly']
+  };
+
+  function suppress(key) {
+    var suppressed = 0;
+
+    keyToDemos[key].forEach(function(demo) {
+      suppressed += parseInt(stateDemos['United States'][demo].replace(/,/g, ''));
+    });
+    console.log('suppressed: ' + suppressed);
   }
 
   getDemographics();
