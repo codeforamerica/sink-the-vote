@@ -13,11 +13,12 @@ $(function() {
       stateDemos[state['location']] = state;
     });
 
-    var param = window.location.href.match(/suppress=(.*)&?/);
+    var param = window.location.href.match(/suppress=(\w)&?/);
     suppress(param[1]);
   }
 
   var keyToDemos = {
+    'everyone': ['everyone'],
     'elderly': ['disabled', 'elderly'],
     'minorities': ['nonwhite'],
     'women': ['women'],
