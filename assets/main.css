@@ -6,7 +6,22 @@ h1{
 	padding:0.2em 1em;
 	border-bottom:1px solid #000;
 	text-transform: none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+body.map h1 {
+    z-index: 10;
+    max-width: 250px;
+    border: 1px solid #000;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+body.map h1 a {
+    text-decoration: none;
+    color: #000;
+}
+
 h1 span{
 	font-size:0.3em;
 	font-weight:normal;
@@ -15,7 +30,6 @@ h1 span{
 	float:right;
 	padding-top:0.5em;
 	padding-right:1em;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .global-foot .layout-tight{
 	padding:0.5em 1em;
@@ -36,8 +50,6 @@ h1 span{
 	font-size: 2em;
 	color:#AD0E1D;
 	text-transform:none;
-
-
 }
 li label{
 	font-size:1em;
@@ -53,6 +65,7 @@ body {
   top:0;
   bottom:0;
   width:100%;
+  z-index: -1;
 }
 
 .map-legend i {
