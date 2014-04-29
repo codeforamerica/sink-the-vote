@@ -104,3 +104,9 @@ p.tryagain{
 	padding:1em;
 	width:30%;
 }
+p.feedback{
+	margin-bottom:0;
+}
+p.tryagain{
+	margin-top:0;
+}
