@@ -13,7 +13,7 @@ $(function() {
       stateDemos[state['location']] = state;
     });
 
-    var param = window.location.href.match(/suppress=(\w)&?/);
+    var param = window.location.href.match(/suppress=(\w+)&?/);
     suppress(param[1]);
   }
 
@@ -34,7 +34,6 @@ $(function() {
   function suppress(key) {
     var suppressed = 0;
 
-    // console.log(stateDemos);
     keyToDemos[key].forEach(function(demo) {
       suppressed += parseInt(stateDemos['United States'][demo].replace(/,/g, ''));
     });
