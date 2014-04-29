@@ -9,6 +9,10 @@ h1{
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+a.no-hover:hover {
+    border: none;
+}
+
 body.map h1 {
     z-index: 10;
     max-width: 250px;
