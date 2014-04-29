@@ -12,28 +12,40 @@ $(function() {
     data.forEach(function(state) {
       stateDemos[state['location']] = state;
     });
-    suppress('elderly');
+
+    var param = window.location.href.match(/suppress=(.*)&?/);
+    suppress(param[1]);
   }
 
   var keyToDemos = {
-    'elderly': ['disabled', 'elderly']
+    'elderly': ['disabled', 'elderly'],
+    'minorities': ['nonwhite'],
+    'women': ['women'],
   };
+
+  function commaSeparateNumber(val){
+      while (/(\d+)(\d{3})/.test(val.toString())){
+        val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
+      }
+      return val;
+  }
 
   function suppress(key) {
     var suppressed = 0;
 
+    // console.log(stateDemos);
     keyToDemos[key].forEach(function(demo) {
       suppressed += parseInt(stateDemos['United States'][demo].replace(/,/g, ''));
     });
-    console.log('suppressed: ' + suppressed);
+    $('.feedback').html('Not bad, you\'ve suppressed ' + commaSeparateNumber(suppressed) + ' voters.');
+    $('.try-again').html('But you can do better! Please try again');
   }
-
   getDemographics();
 
   // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
   var map = L.mapbox.map('map', 'examples.map-vyofok3q').setView([37.8, -96], 4);
 
-  var legend = L.mapbox.legendControl().addLegend(getLegendHTML()).addTo(map);
+  // var legend = L.mapbox.legendControl().addLegend(getLegendHTML()).addTo(map);
 
   var popup = new L.Popup({ autoPan: false });
 
