@@ -97,3 +97,8 @@ em{
 .layout-crotchet h1{
 	border:none;
 }
+.feedback,
+.tryagain{
+	background-color:#fff;
+	margin:2em;
+}
